@@ -17,6 +17,8 @@ if [ -z "$PKG2AIREPO" ] ; then
   PKG2AIREPO=AppImage/AppImages
 fi
 
+echo "functions.sh PKG2AIREPO=$PKG2AIREPO"
+
 # Options for apt-get to use local files rather than the system ones
 OPTIONS="-o Debug::NoLocking=1
 -o APT::Cache-Limit=125829120

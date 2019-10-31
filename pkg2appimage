@@ -25,6 +25,8 @@ if [ -z "$PKG2AIREPO" ] ; then
   PKG2AIREPO=AppImage/AppImages
 fi
 
+echo "pkg2appimage PKG2AIREPO=$PKG2AIREPO";
+
 usage() {
   if [ -z "$APPIMAGE" ]  ; then
     MYSELF="$0"
