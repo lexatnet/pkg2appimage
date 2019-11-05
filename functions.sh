@@ -162,7 +162,7 @@ delete_blacklisted()
     for skip in "${skip_list[@]}"; do
       if [[ $skip == "${FILE}" ]]; then
         clear=false
-        break
+        break;
       fi
     done;
 
@@ -170,7 +170,7 @@ delete_blacklisted()
       FILES="$(find . -name "${FILE}" -not -path "./usr/optional/*")"
       for FOUND in $FILES ; do
         rm -vf "$FOUND" "$(readlink -f "$FOUND")"
-      done
+      done;
     else
       echo "skiping ${FILE}"
     fi
