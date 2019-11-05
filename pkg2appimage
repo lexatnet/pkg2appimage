@@ -441,7 +441,7 @@ if [ ! -z "${_blacklisted_skip[0]}" ] ; then
   delete_blacklisted_args="${delete_blacklisted_args} ${blacklisted_skip_args}"
 fi
 
-delete_blacklisted "${delete_blacklisted_args}"
+delete_blacklisted ${delete_blacklisted_args}
 
 if [ "$ENABLE_DI" = "yes" ] ; then
   get_desktopintegration $LOWERAPP
